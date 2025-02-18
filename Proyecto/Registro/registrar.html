@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="registrar.css">
+
 </head>
 <body>
-    
+    <h1 class="title" id="title">Register</h1>
+  <main class="general">
+    <form class="general__form">
+      <div>
+        <label for="name-register">Nombre</label>
+        <input id="name-register" type="text" maxlength="1000">
+      </div>
+      <div>
+        <label for="lastname-register">Apellido</label>
+        <input id="lastname-register" type="text">
+      </div>
+      <div>
+        <label for="email-register">Correo</label>
+        <input id="email-register" type="email">
+      </div>
+      <div>
+        <label for="cell-register">Celular</label>
+        <input id="cell-register" type="text">
+      </div>
+      <div>
+        <label for="password-register">Contraseña</label>
+        <input id="password-register" type="password">
+      </div>
+      <button type="submit" onclick="">Enviar</button>
+    </form>
+  </main>
 </body>
 </html>

@@ -1,0 +1,53 @@
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    min-height: 100vh;
+  }
+  
+  .general form {
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 500px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+  }
+  
+  .general form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .general form div input {
+    outline: none;
+    border: 1px solid #999; /* Borde gris más oscuro */
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    background: #e0e0e0; /* Fondo gris claro para inputs */
+  }
+  
+  .general form button {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: gray; /* Botón gris en vez de verde */
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+  
+  .general form button:hover {
+    background: darkgray; /* Cambio de color al pasar el mouse */
+  }
+  
