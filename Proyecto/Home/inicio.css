@@ -7,7 +7,6 @@ body {
 }
 
 .bienvenida {
-    background: url('BackgroundInicio.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
     flex-direction: column;

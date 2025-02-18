@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #ffffff;
+  background: url('BackgroundInicio.jpg') no-repeat center center/cover;
 }
 
 header {
