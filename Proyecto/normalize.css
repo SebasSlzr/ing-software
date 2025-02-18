@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: url('BackgroundInicio.jpg') no-repeat center center/cover;
+  background: url('/Proyecto/Home/BackgroundInicio.jpg') no-repeat center center/cover;
 }
 
 header {
