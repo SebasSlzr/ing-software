@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  background: url('fondo-contacto.avif') no-repeat center center/cover;
+}
+
+.texto-whatsapp{
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  position: relative;
+  top: 3em;
+  left: 3em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.texto-instagram{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 3.3em;
+  left: 1.5em;
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo-whatsapp img{
+  border-radius: 35%;
+  position: relative;
+  left: 40.5em;
+  top: 8em;
+  height: 5%;
+  width: 5%;
+  }
+  
+.logo-instagram img{
+  position: relative;
+  left: 24em;
+  top: 5em;
+  border-radius: 25%;
+  border: none;
+  font-size: 27px;
+  height: 5%;
+  width: 5%;
+}
+
+footer {
+  background-color: black;
+  color: #bdbdc2;
+  text-align:center;
+  padding: 3px;
+  margin-top: 19.1%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
