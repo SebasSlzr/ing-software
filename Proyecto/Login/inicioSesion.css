@@ -8,7 +8,7 @@
   }
   
   .general form {
-    height: 80dvh;
+    height: 50dvh;
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -55,23 +55,6 @@
     list-style: none; /* Quita los puntos de la lista */
     padding: 0; /* Asegura que no haya espaciado extra */
     margin: 0; /* Asegura que no haya margen extra */
-}
-
-.texto-iniciar-sesion {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1em;
-    color: black;
-}
-
-.link-iniciar-sesion {
-    color: darkred; /* Color rojo oscuro */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.link-iniciar-sesion:hover {
-    text-decoration: underline;
 }
 
 

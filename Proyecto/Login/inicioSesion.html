@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href=../normalize.css>
-    <link rel="stylesheet" href="registrar.css">
+    <link rel="stylesheet" href="inicioSesion.css">
 
 </head>
 <body>
@@ -18,7 +18,7 @@
         <ul>
             <a href = "../Home/inicio.html"rel = "noopener noreferrer"><li>Inicio</li></a>
             <a href = "../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
-            <a href = "registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
+            <a href = "../Registro/registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
             <a href = "../CalculadoraCalorias/calculadora.html" rel = "noopener noreferrer"><li>Calculadora</li></a>
             <a href = "../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
 
@@ -27,31 +27,16 @@
     </header>
 
   <main class="general">
-    <form id="registerForm" class="general__form">
-      <div>
-        <label for="name-register">Nombre</label>
-        <input id="name-register" type="text" maxlength="1000" required>
-      </div>
-      <div>
-        <label for="lastname-register">Apellido</label>
-        <input id="lastname-register" type="text" required>
-      </div>
+    <form id="loginForm" class="general__form">
       <div>
         <label for="email-register">Correo</label>
         <input id="email-register" type="email" placeholder="Debe incluir @ y terminar en .com" required>
-      </div>
-      <div>
-        <label for="cell-register">Celular</label>
-        <input id="cell-register" type="text" required>
       </div>
       <div>
         <label for="password-register">Contraseña</label>
         <input id="password-register" type="password" required>
       </div>
       <button type="submit">Enviar</button>
-        <p class="texto-iniciar-sesion">¿Ya tienes cuenta? 
-          <a href="../Login/inicioSesion.html" class="link-iniciar-sesion">Inicia sesión</a>
-        </p>
     </form>
   </main>
 
@@ -68,7 +53,7 @@
 </footer>
 
     <script src="main.js"></script>
-    <script src="registrar.js"></script>
+    <script src="inicioSesion.js"></script>
 
 </body>
 </html>
