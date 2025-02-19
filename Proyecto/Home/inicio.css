@@ -1,9 +1,13 @@
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: white;
     text-align: center;
+    background: url('/Proyecto/Home/BackgroundInicio.jpg') no-repeat center center/cover;
+  
 }
 
 .bienvenida {
@@ -40,38 +44,6 @@ h1 {
     background-color: rgb(79, 2, 2);
 }
 
-footer {
-    background-color: black;
-    color: #bdbdc2;
-    text-align: center;
-    padding: 20px 0;
-}
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.logo {
-    width: 100px;
-    margin-bottom: 10px;
-}
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}

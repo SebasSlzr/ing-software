@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorías</title>
+    <link rel="stylesheet" href=../normalize.css>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <header class = "header"> 
+        <a href = "#" class = "logo-gym">
+          <img src = "../Home/GymFitLogo_transparent.png"></a>  
+          <h2 class = "nombre-logo">TuGym</h2>
+        </a>  
+      <nav>
+        <ul>
+            <a href = "../Home/inicio.html"rel = "noopener noreferrer"><li>Inicio</li></a>
+            <a href = "../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
+            <a href = "../Registro/registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
+            <a href = "calculadora.html" rel = "noopener noreferrer"><li>Calculadora</li></a>
+            <a href = "../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
+
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <h2>Calculadora de Calorías</h2>
+        <form id="calculoCalorias">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+
+            <label for="sexo">Género:</label>
+            <select id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+
+            <label for="actividad">Nivel de actividad:</label>
+            <select id="actividad">
+                <option value="1.2">Sedentario (poco o ningún ejercicio)</option>
+                <option value="1.375">Ligero (1-3 días/semana)</option>
+                <option value="1.55">Moderado (3-5 días/semana)</option>
+                <option value="1.725">Activo (6-7 días/semana)</option>
+                <option value="1.9">Muy activo (ejercicio intenso diario)</option>
+            </select>
+
+            <button type="button" onclick="calcularCalorias()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="/Proyecto/Home/GymFitLogo_transparent.png" alt="Logo del gimnasio" class="logo">
+            <ul>
+                <li><a href="#"rel = "noopener noreferrer">Sobre nosotros</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Contáctanos</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Cuestionarios</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="calculadora.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
