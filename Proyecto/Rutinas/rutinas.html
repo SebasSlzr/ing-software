@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinas - Acondicionamiento Físico</title>
+    
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="rutinas.css">
+</head>
+<body>
+
+    <header class="header"> 
+        <a href="#" class="logo-gym">
+            <img src="/Home/GymFitLogo_transparent.png" alt="Logo">
+        </a>  
+        <h2 class="nombre-logo">TuGym</h2>
+        <nav>
+            <ul>
+                <a href = "../Home/inicio.html"rel = "noopener noreferrer"><li>Inicio</li></a>
+                <a href = "../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
+                <a href = "registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
+                <a href = "../CalculadoraCalorias/calculadora.html" rel = "noopener noreferrer"><li>Calculadora</li></a>
+                <a href = "../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
+                <a href = "/Rutinas/rutina.html"rel = "noopener noreferrer"><li>Rutinas</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulario de Acondicionamiento Físico</h1>
+        <form id="formRutinas">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" name="altura" required>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Estado de Salud</legend>
+            
+                <label>¿Tienes alguna condición médica preexistente?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="condicion_medica" value="hipertension"> Hipertensión</label>
+                    <label><input type="radio" name="condicion_medica" value="diabetes"> Diabetes</label>
+                    <label><input type="radio" name="condicion_medica" value="problemas_cardiacos"> Problemas cardíacos</label>
+                    <label><input type="radio" name="condicion_medica" value="ninguna" checked> Ninguna</label>
+                </div>
+            
+                <label>¿Estás tomando algún medicamento actualmente?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="medicamento" value="si"> Sí</label>
+                    <label><input type="radio" name="medicamento" value="no"> No</label>
+                </div>
+            
+                <label>¿Has tenido alguna lesión reciente o crónica?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="lesion" value="si"> Sí</label>
+                    <label><input type="radio" name="lesion" value="no"> No</label>
+                </div>
+            
+                <label for="fumas">¿Fumas?</label>
+                <select id="fumas" name="fumas">
+                    <option value="no">No</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                    <option value="frecuente">Frecuentemente</option>
+                </select>
+            
+                <label for="alcohol">¿Consumes alcohol?</label>
+                <select id="alcohol" name="alcohol">
+                    <option value="no">No</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                    <option value="frecuente">Frecuentemente</option>
+                </select>
+            </fieldset>
+            
+
+                <label for="alcohol">¿Consumes alcohol?</label>
+                <select id="alcohol" name="alcohol">
+                    <option value="no">No</option>
+                    <option value="ocasionalmente">Ocasionalmente</option>
+                    <option value="frecuente">Frecuentemente</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos de Ejercicio</legend>
+                <label for="actividad">¿Cuánto tiempo dedicas a la actividad física semanalmente?</label>
+                <select id="actividad" name="actividad">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="1-2">1-2 horas</option>
+                    <option value="3-5">3-5 horas</option>
+                    <option value="más5">Más de 5 horas</option>
+                </select>
+
+                <label for="ejercicios">¿Qué tipo de ejercicios realizas habitualmente?</label>
+                <input type="text" id="ejercicios" name="ejercicios">
+
+                <label for="experiencia">¿Tienes experiencia previa en entrenamiento físico?</label>
+                <textarea id="experiencia" name="experiencia" rows="2"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Objetivos</legend>
+                <label for="objetivos">¿Cuáles son tus principales objetivos con el ejercicio?</label>
+                <textarea id="objetivos" name="objetivos" rows="2"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivación</legend>
+                <label for="motivacion">Nivel de Motivación (1-10):</label>
+                <input type="number" id="motivacion" name="motivacion" min="1" max="10">
+
+                <label for="obstaculos">¿Qué obstáculos crees que podrías encontrar en tu camino?</label>
+                <textarea id="obstaculos" name="obstaculos" rows="2"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="/Home/GymFitLogo_transparent.png" alt="Logo del gimnasio" class="logo">
+            <ul>
+                <li><a href="#"rel = "noopener noreferrer">Sobre nosotros</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Contáctanos</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Cuestionarios</a></li>
+                <li><a href="#"rel = "noopener noreferrer">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="rutinas.js"></script>
+</body>
+</html>
