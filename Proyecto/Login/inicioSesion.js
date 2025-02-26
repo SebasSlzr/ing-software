@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("loginForm");
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Evita la recarga de la página
+        event.preventDefault(); 
 
         const email = document.getElementById("email-register").value.trim();
         const password = document.getElementById("password-register").value.trim();

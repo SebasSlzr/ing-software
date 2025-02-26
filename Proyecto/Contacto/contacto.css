@@ -7,7 +7,7 @@
 html,
 body {
   background: url('./fondo-contacto.jpeg') no-repeat center center/cover;
-  height: 100%; /* Aseguramos que el fondo cubra toda la pantalla */
+  height: 100%; 
 }
 
 .main {
@@ -36,14 +36,14 @@ body {
 
 .logo-whatsapp img,
 .logo-instagram img {
-  border-radius: 50%; /* Asegura bordes redondeados */
-  height: 80px; /* Tamaño ajustado */
-  width: 80px; /* Tamaño ajustado */
+  border-radius: 26%; 
+  height: 80px; 
+  width: 80px; 
   transition: transform 0.3s ease;
 }
 
 .logo-whatsapp img:hover,
 .logo-instagram img:hover {
-  transform: scale(1.1); /* Efecto de hover */
+  transform: scale(1.1); 
 }
 

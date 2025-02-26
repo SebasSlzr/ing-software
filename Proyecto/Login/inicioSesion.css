@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #f5f5f5; /* Fondo gris claro */
+    background-color: #f5f5f5; 
     min-height: 100vh;
   }
   
@@ -28,18 +28,18 @@
   
   .general form div input {
     outline: none;
-    border: 1px solid #999; /* Borde gris más oscuro */
+    border: 1px solid #999;
     width: 100%;
     padding: 8px;
     border-radius: 10px;
-    background: #e0e0e0; /* Fondo gris claro para inputs */
+    background: #e0e0e0; 
   }
   
   .general form button {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
-    background: gray; /* Botón gris en vez de verde */
+    background: gray; 
     color: white;
     border: none;
     font-size: 1em;
@@ -48,13 +48,13 @@
   }
   
   .general form button:hover {
-    background: darkgray; /* Cambio de color al pasar el mouse */
+    background: darkgray; 
   }
 
   ul {
-    list-style: none; /* Quita los puntos de la lista */
-    padding: 0; /* Asegura que no haya espaciado extra */
-    margin: 0; /* Asegura que no haya margen extra */
+    list-style: none;
+    padding: 0; 
+    margin: 0;
 }
 
 

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registerForm");
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Evita que el formulario recargue la página
+        event.preventDefault(); 
 
         const name = document.getElementById("name-register").value.trim();
         const lastname = document.getElementById("lastname-register").value.trim();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return alert("La contraseña debe tener al menos 6 caracteres.");
         }
 
-        // Si todo está correcto, redirige a la página de inicio de sesión
+        
         window.location.href = "../CalculadoraCalorias/calculadora.html";
     });
 });

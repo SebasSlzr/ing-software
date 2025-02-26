@@ -17,9 +17,9 @@ header {
 }
 
 .logo-gym img {
-  width: 210px; /* Tamaño fijo para evitar cambios */
-  padding-top: 0; /* Elimina el empuje hacia abajo */
-  right: auto; /* Elimina la alineación forzada */
+  width: 210px; 
+  padding-top: 0; 
+  right: auto; 
 }
 
 
