@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171717;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/Imagenes/fondo-info.jpeg') no-repeat center center;
+    background-size: cover; /* Ajusta la imagen al ancho de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;
+}
+
+
+main {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+    text-align: center;
+    color: #333;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+fieldset {
+    border: none;
+    background: #d6d6d6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+  
+legend {
+    font-weight: bold;
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    position: relative;
+    top: 20px; /* Bajado un poco más */
+    text-align: center;
+    width: 100%;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}  
+  
+  
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #e0e0e0;
+}
+  
+textarea {
+    resize: none;
+}
+  
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 5px;
+    flex-direction: row;
+    align-items: center; 
+}
+  
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-weight: normal;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+  
+.radio-group input[type="radio"] {
+    transform: scale(1.2);
+}
+  
