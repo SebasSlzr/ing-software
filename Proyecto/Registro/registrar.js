@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registerForm");
 
@@ -23,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         
-        window.location.href = "../CalculadoraCalorias/calculadora.html";
+        window.location.href = "../Rutinas/rutinas.html";
+        
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    Swal.fire({
+        title: "¡Regístrate y empieza tu entrenamiento!",
+        icon: "warning",
+        confirmButtonColor: "darkred"
     });
 });

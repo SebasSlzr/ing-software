@@ -22,3 +22,11 @@ function calcularCalorias() {
 
     document.getElementById("resultado").innerHTML = `Tu gasto calórico diario es aproximadamente: <b>${Math.round(caloriasDiarias)} calorías</b>`;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    Swal.fire({
+        title: "Calcula tu gasto calórico diario",
+        icon: "info",
+        confirmButtonColor: "darkred"
+    });
+});

@@ -13,5 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log("Datos del formulario:", datos);
         alert("Formulario enviado con éxito");
+
+        window.location.href = "../Ejercicio/ejercicio.html";
     });
 });

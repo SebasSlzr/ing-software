@@ -1,9 +1,16 @@
+html,
+body {
+  background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center/cover;
+
+}
+
+
 .general {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #f5f5f5; 
+    background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center/cover; 
     min-height: 100vh;
   }
   

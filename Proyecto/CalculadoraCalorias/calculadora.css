@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center/cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
