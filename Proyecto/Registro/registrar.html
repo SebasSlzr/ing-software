@@ -4,72 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href=../normalize.css>
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="registrar.css">
-
 </head>
 <body>
-    <header class = "header"> 
-        <a href = "#" class = "logo-gym">
-          <img src = "../Home/GymFitLogo_transparent.png"></a>  
-          <h2 class = "nombre-logo">TuGym</h2>
+    <header class="header">
+        <a href="#" class="logo-gym">
+            <img src="../Home/GymFitLogo_transparent.png" alt="Logo del Gimnasio">
         </a>  
-      <nav>
-        <ul>
-            <a href = "../Home/inicio.html"rel = "noopener noreferrer"><li>Inicio</li></a>
-            <a href = "../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
-            <a href = "registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
-            <a href = "../CalculadoraCalorias/calculadora.html" rel = "noopener noreferrer"><li>Calculadora</li></a>
-            <a href = "../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
-
-        </ul>
-      </nav>
+        <h2 class="nombre-logo">TuGym</h2>
+        <nav>
+            <ul>
+          <a href = "/Home/inicio.html"rel = "noopener noreferrer"><li>Inicio</li></a>
+          <a href = "../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
+          <a href = "../Registro/registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
+          <a href = "../CalculadoraCalorias/calculadora.html" rel = "noopener noreferrer"><li>Calculadora</li></a>
+          <a href = "../Ejercicio/ejercicio.html" rel = "noopener noreferrer"><li>Ejercicios</li></a>
+          <a href = "../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
+            </ul>
+        </nav>
     </header>
 
-  <main class="general">
-    <form id="registerForm" class="general__form">
-      <div>
-        <label for="name-register">Nombre</label>
-        <input id="name-register" type="text" maxlength="1000" required>
-      </div>
-      <div>
-        <label for="lastname-register">Apellido</label>
-        <input id="lastname-register" type="text" required>
-      </div>
-      <div>
-        <label for="email-register">Correo</label>
-        <input id="email-register" type="email" placeholder="Debe incluir @ y terminar en .com" required>
-      </div>
-      <div>
-        <label for="cell-register">Celular</label>
-        <input id="cell-register" type="text" required>
-      </div>
-      <div>
-        <label for="password-register">Contraseña</label>
-        <input id="password-register" type="password" required>
-      </div>
-      <button type="submit">Enviar</button>
-        <p class="texto-iniciar-sesion">¿Ya tienes cuenta? 
-          <a href="../Login/inicioSesion.html" class="link-iniciar-sesion">Inicia sesión</a>
-        </p>
-    </form>
-  </main>
+    <main class="general">
+        <form id="registerForm">
+            <div>
+                <label for="name-register">Nombre</label>
+                <input id="name-register" type="text" required>
+            </div>
+            <div>
+                <label for="lastname-register">Apellido</label>
+                <input id="lastname-register" type="text" required>
+            </div>
+            <div>
+                <label for="username-register">Nombre de Usuario</label>
+                <input id="username-register" type="text" required>
+            </div>
+            <div>
+                <label for="email-register">Correo</label>
+                <input id="email-register" type="email" required>
+            </div>
+            <div>
+                <label for="cell-register">Celular</label>
+                <input id="cell-register" type="text" required>
+            </div>
+            <div>
+                <label for="password-register">Contraseña</label>
+                <input id="password-register" type="password" required>
+            </div>
+            <button type="submit">Enviar</button>
+            <p class="texto-iniciar-sesion">¿Ya tienes cuenta? 
+                <a href="../Login/inicioSesion.html" class="link-iniciar-sesion">Inicia sesión</a>
+            </p>
+        </form>
+    </main>
 
-  <footer>
-    <div class="footer-content">
-        <img src="/Proyecto/Home/GymFitLogo_transparent.png" alt="Logo del gimnasio" class="logo">
-        <ul>
-            <li><a href="#"rel = "noopener noreferrer">Sobre nosotros</a></li>
-            <li><a href="#"rel = "noopener noreferrer">Contáctanos</a></li>
-            <li><a href="#"rel = "noopener noreferrer">Cuestionarios</a></li>
-            <li><a href="#"rel = "noopener noreferrer">Política de privacidad</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <img src="../Home/GymFitLogo_transparent.png" alt="Logo del gimnasio" class="logo">
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Cuestionarios</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="registrar.js"></script>
-
 </body>
 </html>

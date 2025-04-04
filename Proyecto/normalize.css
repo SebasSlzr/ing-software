@@ -16,20 +16,25 @@ header {
   box-shadow: rgb(139, 0, 0) 0px 20px 30px -10px;
 }
 
-.logo-gym img {
-  width: 210px; 
-  padding-top: 0; 
-  right: auto; 
+ul {
+  list-style: none;
+  padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
 
-.nombre-logo{
-  position: relative;
-  right: 15%;
-  font-size: 50px;
-  font-family: fantasy;
-  font-weight: lighter;
-  color:black;
+li{
+   color: black;
+}
+
+footer {
+  background-color: black;
+  color: #bdbdc2;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
 }
 
 nav ul{
@@ -41,24 +46,22 @@ nav ul{
   font-size: 20px;
 }
 
-a{
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  color: white;
   text-decoration: none;
 }
 
-li{
-   color: black;
-}
-
-nav a :hover{
-  color: darkred;
-}
-
-footer {
-  background-color: black;
-  color: #bdbdc2;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
+.nombre-logo{
+  position: relative;
+  right: 15%;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: lighter;
+  color:black;
 }
 
 .footer-content {
@@ -72,19 +75,16 @@ footer {
   margin-bottom: 10px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.logo-gym img {
+  width: 210px; 
+  padding-top: 0; 
+  right: auto; 
 }
 
-ul li {
-  margin: 5px 0;
+nav a :hover{
+  color: darkred;
 }
 
-ul li a {
-  color: white;
-  text-decoration: none;
-}
 
 ul li a:hover {
   text-decoration: underline;

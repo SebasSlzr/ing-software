@@ -7,8 +7,8 @@ body {
     flex-direction: column;
     align-items: center;
     background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center;
-    background-size: cover; /* Ajusta la imagen al ancho de la pantalla */
-    background-position: center; /* Centra la imagen */
+    background-size: cover; 
+    background-position: center; 
     background-attachment: fixed;
 }
 
@@ -56,7 +56,7 @@ legend {
     font-size: 1.2em;
     margin-bottom: 15px;
     position: relative;
-    top: 20px; /* Bajado un poco más */
+    top: 20px; 
     text-align: center;
     width: 100%;
 }

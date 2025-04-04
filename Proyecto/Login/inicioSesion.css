@@ -4,6 +4,12 @@ body {
 
 }
 
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
 
 .general {
     display: flex;
@@ -58,11 +64,6 @@ body {
     background: darkgray; 
   }
 
-  ul {
-    list-style: none;
-    padding: 0; 
-    margin: 0;
-}
 
 
 

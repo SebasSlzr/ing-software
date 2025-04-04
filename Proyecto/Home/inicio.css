@@ -1,13 +1,19 @@
-
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: white;
     text-align: center;
-    background: url('/Proyecto/Home/BackgroundInicio.jpg') no-repeat center center/cover;
+    background: url('BackgroundInicio.jpg') no-repeat center center/cover;
   
+}
+
+h1 {
+    font-size: 4.5em;
+    font-family: fantasy;
+    margin-bottom: 30px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
 }
 
 .bienvenida {
@@ -19,13 +25,7 @@ body {
     color: darkred;
 }
 
-h1 {
-    font-size: 4.5em;
-    font-family: fantasy;
-    margin-bottom: 30px;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: white;
-}
+
 
 .btn {
     background-color: darkred;

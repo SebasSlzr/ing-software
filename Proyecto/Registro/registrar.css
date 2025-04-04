@@ -4,6 +4,12 @@ body {
 
 }
 
+ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
 .general {
     display: flex;
     justify-content: center;
@@ -12,8 +18,21 @@ body {
     background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center/cover;
     min-height: 100vh;
   }
+
+.texto-iniciar-sesion {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1em;
+    color: black;
+}
+
+.link-iniciar-sesion {
+  color: darkred; 
+  text-decoration: none;
+  font-weight: bold;
+}
   
-  .general form {
+.general form {
     height: 80dvh;
     display: flex;
     flex-direction: column;
@@ -25,23 +44,16 @@ body {
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 20px;
-  }
+}
   
-  .general form div {
+.general form div {
     display: flex;
     flex-direction: column;
-  }
-  
-  .general form div input {
-    outline: none;
-    border: 1px solid #999; 
-    width: 100%;
-    padding: 8px;
-    border-radius: 10px;
-    background: #e0e0e0; 
-  }
-  
-  .general form button {
+}
+
+
+    
+.general form button {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -51,34 +63,21 @@ body {
     font-size: 1em;
     cursor: pointer;
     transition: all .3s linear;
-  }
-  
-  .general form button:hover {
-    background: darkgray; 
-  }
-
-  ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
 }
 
-.texto-iniciar-sesion {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1em;
-    color: black;
-}
-
-.link-iniciar-sesion {
-    color: darkred; 
-    text-decoration: none;
-    font-weight: bold;
+.general form div input {
+    outline: none;
+    border: 1px solid #999; 
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    background: #e0e0e0; 
 }
 
 .link-iniciar-sesion:hover {
     text-decoration: underline;
 }
 
-
-
+.general form button:hover {
+  background: darkgray; 
+}

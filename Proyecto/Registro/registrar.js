@@ -1,38 +1,36 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registerForm");
 
-    form.addEventListener("submit", (event) => {
-        event.preventDefault(); 
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-        const name = document.getElementById("name-register").value.trim();
-        const lastname = document.getElementById("lastname-register").value.trim();
+        const first_name = document.getElementById("name-register").value.trim();
+        const last_name = document.getElementById("lastname-register").value.trim();
+        const username = document.getElementById("username-register").value.trim();
         const email = document.getElementById("email-register").value.trim();
         const phone = document.getElementById("cell-register").value.trim();
         const password = document.getElementById("password-register").value.trim();
 
-        if (!name || !lastname || !email || !phone || !password) {
-            return alert("Por favor, completa todos los campos.");
+        if (!first_name || !last_name || !username || !email || !phone || !password) {
+            Swal.fire("Error", "Completa todos los campos.", "error");
+            return;
         }
 
-        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/.test(email)) {
-            return alert("Ingresa un correo válido que termine en .com.");
+        try {
+            const response = await fetch("http://localhost:3366/api/v1/user/create", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ first_name, last_name, username, email, phone, password }),
+            });
+
+            if (response.ok) {
+                Swal.fire("¡Registro exitoso!", "Ahora puedes iniciar sesión.", "success")
+                    .then(() => { window.location.href = "../Login/inicioSesion.html"; });
+            } else {
+                Swal.fire("Error", "No se pudo registrar el usuario.", "error");
+            }
+        } catch (error) {
+            Swal.fire("Error", "Error de conexión con el servidor.", "error");
         }
-
-        if (password.length < 6) {
-            return alert("La contraseña debe tener al menos 6 caracteres.");
-        }
-
-        
-        window.location.href = "../Rutinas/rutinas.html";
-        
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    Swal.fire({
-        title: "¡Regístrate y empieza tu entrenamiento!",
-        icon: "warning",
-        confirmButtonColor: "darkred"
     });
 });

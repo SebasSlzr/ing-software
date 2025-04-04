@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("loginForm");
-
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
 
@@ -15,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return alert("Ingresa un correo válido que termine en .com.");
         }
 
-        window.location.href = "../CalculadoraCalorias/calculadora.html";
+        window.location.href = "../Rutinas/rutinas.html";
     });
-});
+}
+);

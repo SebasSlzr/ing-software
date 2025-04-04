@@ -1,0 +1,38 @@
+/* Fondo con imagen */
+body {
+    background-image: url('../Contacto/fondo-contacto.jpeg'); /* Cambia esto por la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor central */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Caja negra con el texto */
+.content {
+    background-color: rgba(0, 0, 0, 0.8); /* Negro con transparencia */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+    color: #ff4d4d; /* Rojo (coincidiendo con el estilo de botones) */
+}
+
+/* Ajuste de párrafos */
+p {
+    line-height: 1.6;
+}
