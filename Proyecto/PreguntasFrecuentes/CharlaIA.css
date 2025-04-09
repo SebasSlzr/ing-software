@@ -1,0 +1,40 @@
+body {
+    
+    text-align: center;
+    background: url('../Contacto/fondo-contacto.jpeg') no-repeat center center/cover;
+    
+}
+
+h2, p{
+    color: #d32f2f;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+    font-family: fantasy;
+}
+
+#chat-box {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+    font-size: 22px;
+}
+
+button {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

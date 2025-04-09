@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutina de Ejercicio</title>
+    <title>Chat Interactivo - TuGym</title>
     <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="/Ejercicio/ejercicio.css">
+    <link rel="stylesheet" href="CharlaIA.css">
 </head>
 <body>
+
     <header class="header">
         <a href="../Home/inicio.html" class="logo-gym">
             <img src="../Home/GymFitLogo_transparent.png" alt="Logo del Gimnasio">
@@ -19,16 +20,19 @@
                 <a href="../AcercaDe/acercaDe.html"rel = "noopener noreferrer"><li>Acerca de</li></a>
                 <a href="../Registro/registrar.html"rel = "noopener noreferrer"><li>Registrar</li></a>
                 <a href="../CalculadoraCalorias/calculadora.html"rel = "noopener noreferrer"><li>Calculadora</li></a>
-                <a href = "./ejercicio.html" rel = "noopener noreferrer"><li>Ejercicios</li></a>
+                <a href = "../Ejercicio/ejercicio.html" rel = "noopener noreferrer"><li>Ejercicios</li></a>
                 <a href="../Contacto/contacto.html"rel = "noopener noreferrer"><li>Contactos</li></a>
             </ul>
         </nav>
     </header>
 
-    <main class="contenido">
-        <h1>Lista de Ejercicios</h1>
-        <ul id="lista-ejercicios"></ul> 
-    </main>
+    <h2>Chat de Preguntas Frecuentes - TuGym</h2>
+    <div id="chat-box">
+        <p id="pregunta">¡Hola! ¿En qué puedo ayudarte?</p>
+        <div id="opciones"></div>
+    </div>
+
+    <script src="CharlaIA.js"></script>
 
     <footer>
         <div class="footer-content">
@@ -37,12 +41,11 @@
                 <li><a href="../AcercaDe/acercaDe.html"rel = "noopener noreferrer">Sobre nosotros</a></li>
                 <li><a href="../Contacto/contacto.html"rel = "noopener noreferrer">Contáctanos</a></li>
                 <li><a href="../Rutinas/rutinas.html"rel = "noopener noreferrer">Cuestionarios</a></li>
-                <li><a href="../PoliticaPrivacidad/politica.html"rel = "noopener noreferrer">Política de privacidad</a></li> </ul>
+                <li><a href="../PoliticaPrivacidad/politica.html"rel = "noopener noreferrer">Política de privacidad</a></li></ul>
         </div>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="ejercicio.js"></script>
 </body>
 </html>
+
+

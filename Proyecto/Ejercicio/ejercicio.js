@@ -27,10 +27,20 @@ document.addEventListener("DOMContentLoaded", async () => {
             const ul = document.createElement("ul");
             categorias[categoryId].forEach(ejercicio => {
                 const item = document.createElement("li");
-                item.innerHTML = `<span>${ejercicio.name}</span> - ${ejercicio.description} 
-                                  (Sets: ${ejercicio.sets}, Reps: ${ejercicio.repetitions})`;
+              
+                const gifHTML = ejercicio.media_url
+                  ? `<div class="gif-container"><img src="${ejercicio.media_url}" alt="${ejercicio.name}" class="gif-ejercicio"></div>`
+                  : "";
+              
+                item.innerHTML = `
+                  <span><strong>${ejercicio.name}</strong></span> - ${ejercicio.description}
+                  (Sets: ${ejercicio.sets}, Reps: ${ejercicio.repetitions})<br>
+                  ${gifHTML}
+                `;
+                
                 ul.appendChild(item);
-            });
+              });
+                  
         
             listaEjercicios.appendChild(ul);
         });
@@ -53,3 +63,12 @@ function obtenerNombreCategoria(categoryId) {
     };
     return categorias[categoryId] || "Categoría Desconocida";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    Swal.fire({
+        title: "Tus Rutinas",
+        text: "Consulta tus ejercicios favoritos.",
+        icon: "info",
+        confirmButtonColor: "darkred"
+    });
+});
