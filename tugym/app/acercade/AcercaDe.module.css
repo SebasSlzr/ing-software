@@ -1,0 +1,36 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.infoBox {
+  padding: 50px;
+  text-align: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.titulo {
+  font-size: 2em;
+  color: darkred;
+  margin-bottom: 20px;
+}

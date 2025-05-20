@@ -1,0 +1,61 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 500px;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.formGroup input {
+  outline: none;
+  border: 1px solid #999;
+  padding: 8px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  width: 100%;
+}
+
+.button {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background: gray;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.button:hover {
+  background: darkgray;
+}

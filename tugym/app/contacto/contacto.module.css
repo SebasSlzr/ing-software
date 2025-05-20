@@ -1,0 +1,94 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logoGym img {
+  height: 50px;
+}
+
+.nombreLogo {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.logoWhatsapp,
+.logoInstagram {
+  margin: 15px;
+}
+
+.logoWhatsapp img,
+.logoInstagram img {
+  border-radius: 26%;
+  transition: transform 0.3s ease;
+}
+
+.logoWhatsapp img:hover,
+.logoInstagram img:hover {
+  transform: scale(1.1);
+}
+
+.texto {
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerContent {
+  color: white;
+}
+
+.footerContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerContent li {
+  margin: 5px 0;
+}
+
+.footerContent a {
+  color: white;
+  text-decoration: none;
+}

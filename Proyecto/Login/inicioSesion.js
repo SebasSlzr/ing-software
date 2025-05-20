@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Enviar a la API para validar login
         try {
             const response = await fetch('http://localhost:3366/api/v1/user/login', {
                 method: 'POST',

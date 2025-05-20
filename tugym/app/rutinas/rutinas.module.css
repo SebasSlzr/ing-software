@@ -1,0 +1,85 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tituloPrincipal {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+
+.etiqueta {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.entrada {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.entrada:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
+
+.botonSubmit {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+.botonSubmit:hover {
+  background-color: #e63939;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.columna {
+  flex: 1;
+  min-width: 200px;
+}

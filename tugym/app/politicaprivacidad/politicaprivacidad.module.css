@@ -1,0 +1,36 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.containerPolitica {
+  display: flex;
+  flex-direction: column; /* <- NUEVO */
+  justify-content: center;
+  align-items: center;
+  min-height: auto; /* <- CAMBIADO */
+  padding: 20px;
+}
+
+.contentPolitica {
+  background-color: rgba(0, 0, 0, 0.8); /* Negro con transparencia */
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.contentPolitica h1,
+.contentPolitica h2 {
+  color: #ff4d4d; /* Rojo (coincidiendo con el estilo de botones) */
+}
+
+.contentPolitica p {
+  line-height: 1.6;
+}

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url('/BackgroundInicio.jpg') no-repeat center center/cover;
+}
+
+.titulo {
+  font-size: 4.5em;
+  font-family: fantasy;
+  margin-bottom: 30px;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: white;
+}
+
+.bienvenida {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: darkred;
+}
+
+.masInfo {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.masInfo p {
+  display: inline;
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: darkred;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 15px 40px;
+  font-size: 1.3em;
+  font-family: fantasy;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: rgb(79, 2, 2);
+  border: 2px solid white;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
