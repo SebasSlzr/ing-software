@@ -3,8 +3,11 @@ import styles from './Home.module.css'
 import Swal from 'sweetalert2'
 import { useEffect } from 'react'
 import Image from 'next/image'
+import { useAuth } from '@/context/AuthContext.js'; 
 
 export default function HomePage() {
+  const { user, logout } = useAuth();
+
   useEffect(() => {
     Swal.fire({
       title: "¡Bienvenido a TuGym!",
@@ -14,24 +17,43 @@ export default function HomePage() {
     });
   }, [])
 
+
+
   return (
     <>
       <header className={styles.header}>
-        <a href="#" className={styles.logoGym}>
-          <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={200} height={200} />
-        </a>
-        <h2 className={"nombrelogo"}>TuGym</h2>
-        <nav>
-          <ul>
-            <a href="/"><li>Inicio</li></a>
-            <a href="/acercade"><li>Acerca de</li></a>
-            <a href="/registro"><li>Registrar</li></a>
-            <a href="/calculadora"><li>Calculadora</li></a>
-            <a href="/ejercicio"><li>Ejercicios</li></a>
-            <a href="/contacto"><li>Contactos</li></a>
-          </ul>
-        </nav>
-      </header>
+  <a href="/" className={styles.logoGym}>
+    <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={200} height={200} />
+  </a>
+  <h2 className="nombrelogo">TuGym</h2>
+  <nav>
+    <ul>
+      <a href="/"><li>Inicio</li></a>
+      <a href="/acercade"><li>Acerca de</li></a>
+
+      {!user && (
+        <>
+          <a href="/registro"><li>Registrar</li></a>
+          <a href="/login"><li>Iniciar Sesion</li></a>
+        </>
+      )}
+
+      {user && (
+        <>
+          <a href="/calculadora"><li>Calculadora</li></a>
+          <a href="/ejercicio"><li>Ejercicios</li></a>
+          <a href="/rutinas"><li>Rutinas</li></a>
+          <a href="/contacto"><li>Contactos</li></a>
+          <li onClick={logout} style={{ cursor: 'pointer' }}>Cerrar sesion</li>
+        </>
+      )}
+
+      {user?.role === 'admin' && (
+        <a href="/usuarios"><li>Panel Admin</li></a>
+      )}
+    </ul>
+  </nav>
+</header>
 
       <div className={styles.bienvenida}>
        <h1 className={styles.titulo}>Bienvenido</h1>

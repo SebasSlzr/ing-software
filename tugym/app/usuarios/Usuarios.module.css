@@ -1,0 +1,43 @@
+.fondoCompleto {
+  min-height: 100vh;
+  background-image: url('/fondo-general.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 1;
+}
+
+.general {
+  padding: 2em;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: fantasy;
+  color: #333;
+}
+
+.tabla {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: white; /* <- Fondo blanco sólido para toda la tabla */
+}
+
+.tabla th, .tabla td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tabla th {
+  background-color: darkred;
+  color: white;
+}
+
+.tabla tr {
+  background-color: white; /* <- Fondo blanco para TODAS las filas */
+}

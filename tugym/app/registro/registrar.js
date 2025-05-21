@@ -36,7 +36,7 @@ export default function Registrar() {
 
       if (res.ok) {
         Swal.fire('¡Registro exitoso!', 'Ahora puedes iniciar sesión.', 'success')
-          .then(() => window.location.href = '/Login');
+          .then(() => window.location.href = '/login');
       } else {
         Swal.fire('Error', 'No se pudo registrar el usuario.', 'error');
       }
@@ -47,7 +47,7 @@ export default function Registrar() {
 
   return (
     <>
-     <div className={styles.fondoCompleto}>
+  <div className={styles.fondoCompleto}>
     <header className="header">
             <a href="/" className="logo-gym">
               <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={200} height={200} />
@@ -65,7 +65,7 @@ export default function Registrar() {
             </nav>
           </header>
 
-      {/* FORMULARIO */}
+      
       <main className={styles.general}>
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <div className={styles.formDiv}>
@@ -94,11 +94,12 @@ export default function Registrar() {
           </div>
           <button className={styles.formButton} type="submit">Enviar</button>
           <p className={styles.textoIniciarSesion}>
-            ¿Ya tienes cuenta? <a href="/Login" className={styles.linkIniciarSesion}>Inicia sesión</a>
+            ¿Ya tienes cuenta? <a href="/login" className={styles.linkIniciarSesion}>Inicia sesión</a>
           </p>
         </form>
       </main>
     </div>
+
       <footer>
         <div className={styles.footerContent}>
           <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={100} height={100} className={styles.logo} />

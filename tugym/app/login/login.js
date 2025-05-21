@@ -39,14 +39,17 @@ export default function Login() {
 
       const result = await response.json();
 
-      if (response.ok && result.status === 0) {
+      if (response.ok && result.status === 0 && result.token) {
+        localStorage.setItem('token', result.token);
+        localStorage.setItem('user', JSON.stringify(result.user));
+
         Swal.fire({
           icon: 'success',
           title: 'Inicio de sesion exitoso',
           text: 'Bienvenido de nuevo!',
           confirmButtonColor: 'darkred'
         }).then(() => {
-          window.location.href = "/rutinas"; // Asegurate de migrar esta pestaña también
+          window.location.href = "/rutinas"; // Redirige según el rol si lo deseas
         });
       } else {
         Swal.fire({
@@ -67,51 +70,52 @@ export default function Login() {
 
   return (
     <>
-  <div className={styles.fondoCompleto}>
-    <header className="header">
-            <a href="/" className="logo-gym">
-              <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={200} height={200} />
-            </a>
-            <h2 className="nombrelogo">TuGym</h2>
-            <nav>
-              <ul className="nav-list">
-                <a href="/"><li>Inicio</li></a>
-                <a href="/acercade"><li>Acerca de</li></a>
-                <a href="/registro"><li>Registrar</li></a>
-                <a href="/calculadora"><li>Calculadora</li></a>
-                <a href="/ejercicio"><li>Ejercicios</li></a>
-                <a href="/contacto"><li>Contactos</li></a>
-              </ul>
-            </nav>
-          </header>
-    <div className={styles.general}>
-      <form className={styles.form} onSubmit={handleLogin}>
-        <div className={styles.formGroup}>
-          <label htmlFor="email">Correo</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Debe incluir @ y terminar en .com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+      <div className={styles.fondoCompleto}>
+        <header className="header">
+          <a href="/" className="logo-gym">
+            <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={200} height={200} />
+          </a>
+          <h2 className="nombrelogo">TuGym</h2>
+          <nav>
+            <ul className="nav-list">
+              <a href="/"><li>Inicio</li></a>
+              <a href="/acercade"><li>Acerca de</li></a>
+              <a href="/registro"><li>Registrar</li></a>
+              <a href="/calculadora"><li>Calculadora</li></a>
+              <a href="/ejercicio"><li>Ejercicios</li></a>
+              <a href="/contacto"><li>Contactos</li></a>
+            </ul>
+          </nav>
+        </header>
+
+        <div className={styles.general}>
+          <form className={styles.form} onSubmit={handleLogin}>
+            <div className={styles.formGroup}>
+              <label htmlFor="email">Correo</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Debe incluir @ y terminar en .com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label htmlFor="password">Contraseña</label>
+              <input
+                id="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </div>
+            <button type="submit" className={styles.button}>Enviar</button>
+          </form>
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="password">Contraseña</label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit" className={styles.button}>Enviar</button>
-      </form>
-    </div>
-   </div> 
-  <footer>
+      </div>
+      <footer>
         <div className={styles.footerContent}>
           <Image src="/GymFitLogo_transparent.png" alt="Logo del gimnasio" width={100} height={100} className={styles.logo} />
           <ul>
